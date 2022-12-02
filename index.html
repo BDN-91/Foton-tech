@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foton-tech</title>
-  </head>
-  <body>
-    <header class="header">
-      <section class="contacts">
-        <div class="container">
-          <ul class="contact__list">
-            <li class="contacts__item">
-              <address class="contacts__address">
-                Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek
-              </address>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__email" href="mailto:dorotapawezka@gmail.com"
-                >dorotapawezka@gmail.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__phone" href="tel:+48695716531"
-                >+48695716531</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main-info">
-        <div class="container">
-          <a class="logo" href="index.html">
-            <div class="logo-wrapper">
-              <img
-                src="./images/logo.png"
-                width="131"
-                height="34"
-                alt="Foton-tech logo"
-              />
-            </div>
-          </a>
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="">Strona główna</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="about.html">O nas</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Projekty</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Instalacja</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon"> <!--favicon image-->
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>Foton-tech</title>
+</head>
+<body>
+<header class="header">
+	<section class="contacts">
+		<div class="container">
+			<address class="contacts__address">
+				Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek
+			</address>
+			<a class="contacts__email" href="mailto:dorotapawezka@gmail.com" >dorotapawezka@gmail.com</a >
+			<a class="contacts__phone" href="tel:+48695716531">+48695716531</a>
+		</div>
+	</section>
+	<section class="main-info">
+		<div class="container">
+			<a class="logo" href="index.html">
+				<div class="logo-wrapper">
+					<img
+						src="./images/logo.png"
+						width="131"
+						height="34"
+						alt="Foton-tech logo"
+					/>
+				</div>
+			</a>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link link--active" href="">Strona główna</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="about.html">O nas</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">Projekty</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">Instalacja</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+</header>
+<main class="main">
+	<section class="welcome-section">
+		<div class="container" data-left="solar" data-right="energy">
+			<h1 class="main-title">Panele Fotowoltaiczne</h1>
+			<p class="main-description text">Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
+			<button class="button" type="button">Obliczyć koszt</button>
+		</div>
+	</section>
+	<section class="example-section">
+		<div class="container container--decoration container--bg">
+			<div class="image-wrapper">
+				<img src="./images/home/photo.jpg" width="600" height="600" alt="House photo">
+			</div>
+			<div class="description">
+				<h2 class="title" data-decoration="info">Ty i twói dom</h2>
+				<p class="text">Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
+					Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe
+					mają ogromny wpływ na środowisko.
+					<br/>
+					To wspaniała wiadomość, ponieważ każdy z nas ma moc wpływania
+					na pozytywne zmiany.
+					<br/>
+					Wszyscy jesteśmy odpowiedzialni za stworzenie zrównoważonego
+					świata i istnieje tak wiele sposobów, aby to zrobić.</p>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="main-info">
+			<a class="logo" href="index.html">
+				<div class="logo-wrapper">
+					<img
+						src="./images/logo.png"
+						width="131"
+						height="34"
+						alt="Foton-tech logo"
+					/>
+				</div>
+			</a>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link link--active" href="">Strona główna</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="about.html">O nas</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">Projekty</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">Instalacja</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="button button--transparent" type="button">Oddzwoń</button>
+		</div>
+		<div class="credential">
+			<a class="credential__link" href="#">Polityka prywatności</a>
+			<a class="credential__link" href="#">Ochrona danych osobowych</a>
+		</div>
+	</div>
+</footer>
+</body>
 </html>
