@@ -1,0 +1,256 @@
+@import url(/CSS/reset.css);
+
+body {
+    color:#20242D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--container--*/
+
+.container {
+    max-width: 1600px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.presentation .container {
+    max-width: 1200px;
+}
+
+/*--header--*/
+
+.contacts {
+    padding: 10px 0;
+    background-color: #20242D;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.contacts__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 50px;
+}
+
+.contacts__item:first-child {
+    margin-right: auto;
+}
+
+.contacts__email, .contacts__phone {
+    padding-left: 20px;
+    position: relative;
+}
+
+.contacts__email::before,
+.contacts__phone::before {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translate(0, -50%);
+}
+
+.contacts__phone::before {
+    content: url(../Images/Icons/tel.svg);
+} 
+
+.contacts__email::before {
+    content: url(../Images/Icons/mail.svg);
+} 
+
+
+/*main*/
+
+.main-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 0 50px;
+}
+
+.navigation__link {
+    position: relative;
+}
+
+.link--active , .navigation__link:hover {
+    color: #FF7129;
+}
+
+.main-info .link--active::before,
+.main-info .link--active::after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #FF7129;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.main-info .link--active::before {
+    left: -15px;
+}
+.main-info .link--active::after {
+    right: -15px;
+}
+
+/*=====*/
+
+.intro {
+    background-image: url(../Images/main__intro\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 0px;
+    min-height: 845px;
+    color:#fff;
+}
+
+.intro__title {
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 111px;
+}
+
+.intro__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 14px;
+    width: 190px;
+    height: 50px;
+    border: 1px solid #FF7129;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button--color-orange {
+    background-color: #FF7129;
+}
+
+.button--color-orange:hover {
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
+
+/*=====*/
+
+.presentation-inner {
+    display: flex;
+    padding: 130px 0;
+}
+
+.presentation__img-wrapper {
+    position: relative;
+}
+
+.presentation__img-wrapper::before {
+    content: url(../Images/main__service\ decoration.jpg);
+    position: absolute;
+    left: -40%;
+    top: 0;
+    z-index: -1;
+}
+
+.presentation__img-wrapper, .presentation__decription {
+    width: 50%;
+}
+
+.presentation__decription {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    padding-left: 80px;
+}
+
+.title-page {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    padding-left: 16px;
+    position: relative;
+}
+
+.presentation__title {
+    margin: 60px 0;
+}
+
+.title-page::before {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background-color:#FF7129;
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/*footer*/
+
+.footer {
+    background-color: #20242D;
+    color: #fff;
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7B7E85;
+}
+
+.copyright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: #7B7E85;
+    opacity: 0.3;
+} 
+
+.footer__button {
+    margin-left: auto;
+}
+
+
+/*--about--*/
+
+
+
