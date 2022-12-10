@@ -252,6 +252,22 @@ body {
 
 /*--about--*/
 
+.about-intro {
+
+    min-height: 350px;
+    background-image: url(../Images/about__intro\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+
+.intro-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+}
 
 
 
