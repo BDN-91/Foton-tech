@@ -160,7 +160,7 @@ br {
   width: 14px;
   height: 14px;
   background-repeat: no-repeat;
-  background-size: 12px;
+  background-size: 14px;
   background-position: center;
 }
 .contacts__email::before {
@@ -310,4 +310,49 @@ br {
   margin-bottom: 65px;
 }
 
+/*modal*/
+@keyframes fadeIn {
+  0% {transform: translateY(-2000px);}
+  50% {transform: translateY(0%);}
+  70% {transform: translateY(-15%);}
+  100% {transform: translateY(0%);}
+}
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(32, 36, 45, .9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay--show {
+  display: flex;
+}
+
+.modal {
+  width: 800px;
+  height: 600px;
+  background-color: #fff;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal--show {
+  display: flex;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.close-modal {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  cursor: pointer;
+}
