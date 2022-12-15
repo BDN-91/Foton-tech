@@ -73,7 +73,7 @@
           <div class="intro-wrapper" data-solar="solar" data-energy="energy">
             <h1 class="intro__title">Panele Fotowoltaiczne</h1>
             <p class="intro__subtitle">Kompleksowe usługi w zakresie montażu i podłączenia paneli <br> słonecznych.</p>
-            <button class="button">Obliczyć koszt</button>
+            <button class="button" id="call">Obliczyć koszt</button>
           </div>
         </div>
       </section>
@@ -133,7 +133,7 @@
                 </li>
               </ul>
             </nav>
-            <button class="button button--transparent">Oddzwoń</button>
+            <button class="button button--transparent" id="footer-call">Oddzwoń</button>
           </div>
           <div class="copyright">
             <p class="copyright__item"><a href="#">Polityka prywatności</a></p>
@@ -142,5 +142,35 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <form class="calculator modal">
+        <span class="close-modal">X</span>
+        <div class="calculator-wrapper">
+          <h1 class="calculator-title" data-calculator="calculator">Obliczyć koszt</h1>
+          <p class="calculator-sub-title">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+        </div>
+        <div class="input-range-wrapper">
+          <label class="input-range-lable" for="progress" data-kWt="42 200 kWh">Roczne zużycie energii elektrycznej<a href="#">&#x1F6C8</a></label>
+          <input class="input-range" id="progress" type="range">
+        </div>
+        <button class="button" type="button">Obliczyć</button>
+      </form>
+      <div class="question modal">
+        <span class="close-modal">X</span>
+        <h1>second modal</h1>
+        <button class="button" type="button">Wysłać prośbę</button>
+      </div>
+      <div class="final modal">
+        <span class="close-modal">X</span>
+        <h1>third modal</h1>
+        <button class="button" type="button">Ok</button>
+      </div>
+      <div class="callback modal">
+        <span class="close-modal">X</span>
+        <h1>callback modal</h1>
+        <button class="button" type="button">Ok</button>
+      </div>
+    </div>
+    <script src="./JS/script.js"></script>
   </body>
 </html>

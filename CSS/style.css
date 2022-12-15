@@ -598,3 +598,177 @@ body {
     top: 0;
     left: 0;
 }
+
+/*--modal--*/
+
+@keyframes fadeIn {
+    0% {transform: translateY(-2000px);}
+    50% {transform: translateY(0%);}
+    70% {transform: translateY(-15%);}
+    100% {transform: translateY(0%);}
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(32, 36, 45, .9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+  
+.overlay--show {
+    display: flex;
+}
+  
+.modal {
+    width: 800px;
+    position: relative;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+
+  /*--modal-calculator--*/
+
+.calculator {
+    height: 600px ;
+}
+
+.calculator-wrapper {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.calculator-title {
+    color: #20242D;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 97%;
+    position: relative;
+    padding-left: 16px;
+}
+
+.calculator-title::before {
+    content: "";
+    width: 1px;
+    height: 52px;
+    background-color:#FF7129;
+    position: absolute;
+    left: 0px;
+}
+
+.calculator-title::after {
+    position: absolute;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #20242D;
+    opacity: 0.2;
+    
+}
+
+.calculator-title::after {
+    content: attr(data-calculator);
+    top: -160%;
+    left: -3%;
+}
+
+.calculator-sub-title {
+    margin-top: 15px;
+}
+
+.input-range-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding-top: 50px;
+}
+
+.input-range-lable {
+    position: relative;
+}
+
+.input-range-lable::after {
+    content: attr(data-kWt);
+    position: absolute;
+    right: 0;
+    font-weight: 700;
+}
+
+.input-range-lable a {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #7B7E85
+}
+
+.input-range-lable a:hover {
+    color: #FF7129;
+}
+
+.input-range  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    height: 6px;
+}
+
+.input-range::-webkit-slider-runnable-track {
+    height: 6px;
+    background: linear-gradient(90deg, #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);
+    border-radius: 4px;
+}
+
+.input-range::-webkit-slider-thumb {
+    background: #fff;
+    cursor: ew-resize;
+    width:25px;
+    height: 25px;
+    border: solid 8px #FF7129;
+    border-radius: 25px;
+    box-shadow: 0px 4px 17px rgba(255, 113, 41, 0.29);
+    -webkit-appearance: none;
+    margin-top: -9px;
+}
+
+.input-range::-moz-range-track {
+    height: 6px;
+    background: linear-gradient(90deg, #5CD35A 0%, #FF8D24 50%, #F01717 100.73%);
+    border-radius: 4px;
+}
+
+
+.input-range::-moz-range-thumb {
+    background: #fff;
+    cursor: pointer;
+    height: 7px;
+    border-radius:0px;
+    box-shadow: -200px  0px 0px 200px   #43e5f7;
+    padding: 0px;
+    margin: 0px;
+}
+
+.modal--show {
+    display: flex;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+  
+.close-modal {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    cursor: pointer;
+}
