@@ -143,18 +143,42 @@
       </div>
     </footer>
     <div class="overlay">
-      <form class="calculator modal">
+      <div class="calculator modal">
         <span class="close-modal">X</span>
         <div class="calculator-wrapper">
-          <h1 class="calculator-title" data-calculator="calculator">Obliczyć koszt</h1>
-          <p class="calculator-sub-title">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+          <h1 class="calculator__title" data-calculator="calculator">Obliczyć koszt</h1>
+          <p class="calculator__sub-title">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
         </div>
         <div class="input-range-wrapper">
-          <label class="input-range-lable" for="progress" data-kWt="42 200 kWh">Roczne zużycie energii elektrycznej<a href="#">&#x1F6C8</a></label>
-          <input class="input-range" id="progress" type="range">
+          <p class="info-box">
+            Istnieją trzy główne typy paneli słonecznych: monokrystaliczne krzemowe panele słoneczne, polikrystaliczne krzemowe panele słoneczne i cienkowarstwowe ogniwa słoneczne. Istnieją trzy główne typy paneli słonecznych: monokrystaliczne krzemowe panele.
+          </p>
+          <label class="calculator__input-lable" for="progress" datakWt="42200 kWh">Roczne zużycie energii elektrycznej<span class="info-icon">&#x1F6C8</span></label>
+          <input class="calculator__input-range" id="progress" type="range" min="1000" max="100000" step="100" value="42000">
         </div>
-        <button class="button" type="button">Obliczyć</button>
-      </form>
+        <div class="calculator__select-box">
+          <div class="select-wrapper">
+            <label for="side">Strona świata</label>
+            <select id="side">
+              <option value="Wybierz z listy">Wybierz z listy</option>
+              <option value="Południowy">Południowy</option>
+              <option value="Wschodni">Wschodni</option>
+              <option value="Zachodni">Zachodni</option>
+            </select>
+          </div>
+          <div class="select-wrapper">
+            <label for="material">Materiał dachu</label>
+            <select id="material">
+              <option value="Wybierz z listy">Wybierz z listy</option>
+              <option value="Południowy">Południowy</option>
+              <option value="Wschodni">Wschodni</option>
+              <option value="Zachodni">Zachodni</option>
+            </select>
+          </div>
+        </div>
+        <button class="button calculator__button" type="button">Obliczyć</button>
+      </div>
+
       <div class="question modal">
         <span class="close-modal">X</span>
         <h1>second modal</h1>
@@ -172,5 +196,6 @@
       </div>
     </div>
     <script src="./JS/script.js"></script>
+    <script src="./JS/calculator_modal--input_range.js"></script>
   </body>
 </html>

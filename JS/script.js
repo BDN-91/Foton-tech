@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		overlay.classList.remove('overlay--show')
 	})
 
-    /*callback modal*/
+    // /*callback modal*/
 
     const callBackModal = document.querySelector('.callback.modal')
 
