@@ -744,6 +744,21 @@ article:last-child {
     padding: 0 60px;
 }
 
+.modal--show {
+    display: flex;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+  
+.close-modal {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    cursor: pointer;
+}
+
+
 
   /*--modal-calculator--*/
 
@@ -923,19 +938,6 @@ article:last-child {
 
 
 /* ===== */
-.modal--show {
-    display: flex;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-}
-  
-.close-modal {
-    position: absolute;
-    right: 22px;
-    top: 22px;
-    cursor: pointer;
-}
 
 
   
